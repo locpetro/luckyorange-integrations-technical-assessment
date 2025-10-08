@@ -65,8 +65,6 @@ Return an aggregated summary of the store’s products, e.g.:
 
 ### **3\. Technical Expectations**
 
-* Use environment variables for credentials.
-
 * Use `axios` or `node-fetch` for HTTP requests.
 
 * Use the **Shopify GraphQL Admin API** instead of REST.
