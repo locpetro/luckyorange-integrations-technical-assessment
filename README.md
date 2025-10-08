@@ -10,7 +10,7 @@ You’ve joined our team to help integrate our analytics platform with Shopify. 
 
 #### **1\. Setup**
 
-* Create a project in your personal Github repository that you can share.  You’ll send the link to the completed project to [cpetro@luckyorange.com](mailto:cpetro@luckyorange.com) when you are ready.
+* Create a project in your personal Github repository that you can share.  You will email the link to the completed project to [cpetro@luckyorange.com](mailto:cpetro@luckyorange.com) when you are ready.
 
 * Inside this github project, you will find a [main.db.zip](https://github.com/locpetro/luckyorange-integrations-technical-assessment/blob/main/README.md) file.  Unzip this file using the password provided in the technical assessment email we sent.
 
@@ -22,7 +22,6 @@ You’ve joined our team to help integrate our analytics platform with Shopify. 
     access_token text   
   ) STRICT
   ```
-
   *Note: do not check in the main.db into your project*
 
 #### **2\. Microservice**
@@ -92,3 +91,5 @@ Return an aggregated summary of the store’s products, e.g.:
 ### **Submission**
 
 * Check your code into your personal github account
+
+* Email the link to the completed project to [cpetro@luckyorange.com](mailto:cpetro@luckyorange.com).
