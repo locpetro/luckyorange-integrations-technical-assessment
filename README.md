@@ -16,10 +16,12 @@ You’ve joined our team to help integrate our analytics platform with Shopify. 
 
 * In your code, connect to the **`main.db`** file to query for the client credentials (there is only a single row in the table).  Here is what the table schema looks like:
 
-  CREATE TABLE IF NOT EXISTS shopify\_credentials (  
+  ```sql
+  CREATE TABLE IF NOT EXISTS shopify_credentials (  
     store text PRIMARY KEY,   
-    access\_token text   
+    access_token text   
   ) STRICT
+  ```
 
   *Note: do not check in the main.db into your project*
 
@@ -31,15 +33,17 @@ Build a Node.js REST API (Express.js or Hono preferred) with the following endpo
 
 Fetch a list of products (sorted by title) from the connected Shopify store and return a simplified JSON response with the following structure:
 
-`[`  
-  `{`  
-    `"id": "gid://shopify/Product/1234567890",`  
-    `"title": "Example Product",`  
-    `"price": 49.99,`  
-    `"inventory": 120,`  
-    `"created_at": "2025-01-01T12:00:00Z"`  
-  `}`  
-`]`
+```json
+[
+  {  
+    "id": "gid://shopify/Product/1234567890",
+    "title": "Example Product",
+    "price": 49.99,
+    "inventory": 120,
+    "created_at": "2025-01-01T12:00:00Z"
+  }
+]
+```
 
 ##### **`GET /products/:id`**
 
@@ -49,11 +53,13 @@ Return the detailed information of a single product by ID.
 
 Return an aggregated summary of the store’s products, e.g.:
 
-`{`  
-  `"total_products": 24,`  
-  `"total_inventory": 548,`  
-  `"average_price": 36.74`  
-`}`
+```json
+{
+  "total_products": 24,
+  "total_inventory": 548,
+  "average_price": 36.74
+}
+```
 
 ---
 
