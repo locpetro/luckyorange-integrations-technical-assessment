@@ -2,7 +2,7 @@
 
 #### **Scenario**
 
-You’ve joined our team to help integrate our analytics platform with Shopify. Your task is to build a lightweight Node.js/Typescript microservice that exposes a RESTful API for retrieving product data, along with a Node.js/TypeScript SDK that wraps each endpoint for easy reuse across our platform.
+You’ve joined our team to help integrate our analytics platform with Shopify. Your task is to build a lightweight Node.js microservice that exposes a RESTful API for retrieving product data, along with a Node.js SDK that wraps each endpoint for easy reuse across our platform.
 
 ---
 
