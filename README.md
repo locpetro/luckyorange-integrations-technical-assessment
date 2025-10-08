@@ -14,12 +14,13 @@ You’ve joined our team to help integrate our analytics platform with Shopify. 
 
 * Inside this github project, you will find a [main.db.zip](https://github.com/locpetro/luckyorange-integrations-technical-assessment/blob/main/README.md) file.  Unzip this file using the password provided in the technical assessment email we sent.
 
-* In your code, connect to the **`main.db`** file to query for the client credentials (there is only a single row in the table).  Here is what the table schema looks like:
+* In your code, connect to the **`main.db`** file to query for the client credentials and use the store/access token for `id=1` when performing your shopify queries.  Here is what the table schema looks like:
 
   ```sql
-  CREATE TABLE IF NOT EXISTS shopify_credentials (  
-    store text PRIMARY KEY,   
-    access_token text   
+  CREATE TABLE IF NOT EXISTS shopify_credentials(
+    id INTEGER PRIMARY KEY,
+    store text not null,
+    access_token text not null
   ) STRICT
   ```
   *Note: do not check in the main.db into your project*
