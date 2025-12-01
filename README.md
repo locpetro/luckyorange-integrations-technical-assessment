@@ -38,7 +38,7 @@ You are building a high-performance "Product Summary Service" for Lucky Orange. 
 
 Build a Node.js REST API (Express.js or Hono preferred) with the following endpoints:
 
-#### **`GET /products?limit=X&cursor=xx`**
+#### **`GET /products?limit=x&cursor=xxx`**
 
 Fetch a list of products (sorted by title) using optional Cursor-based pagination (expose a next_page token in your API response) from the connected Shopify store and return a JSON response with the following product data:
 
