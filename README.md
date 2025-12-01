@@ -2,7 +2,9 @@
 
 #### **Scenario**
 
-You’ve joined our team to help integrate our analytics platform with Shopify. Your task is to build a lightweight Node.js microservice that exposes a RESTful API for retrieving product data, along with a Node.js SDK that wraps each endpoint for easy reuse across our platform.
+You’ve joined our team to help integrate our analytics platform with Shopify. Your task is to build a lightweight Node.js microservice that exposes a RESTful API for retrieving product data, along with a Node.js SDK that can be shipped to customers so they can integrate as easily as possible.
+
+We have 1000s of customers that will be making calls to this API so consistently serving these requests under 20ms is required to meet our SLA.  Also to consider is that multiple instances of this API may be spun up to handle the load (in this exercise, you just need handle the scale, but you need to account for it in your code).
 
 ---
 
