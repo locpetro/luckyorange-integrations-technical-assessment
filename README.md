@@ -81,14 +81,6 @@ Return an aggregated summary of the store’s products, e.g.:
 
 ---
 
-### **4\. Bonus Points**
-
-* Implement a caching layer (in-memory or Redis) for performance.
-
-* Use TypeScript for type safety.
-
----
-
 ### **Submission**
 
 * Check your code into your personal github account
