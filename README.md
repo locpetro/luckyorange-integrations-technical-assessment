@@ -20,7 +20,7 @@ You are building a high-performance "Product Summary Service" for Lucky Orange. 
 
 3. **Resilience:** The SDK must handle Shopify's GraphQL rate limits (Leaky Bucket) robustly.
 
-4. **Data:** Use the provided SQLite database to resolve store credentials.
+4. **Data:** Use the provided credentials file to make Shopify GrpahQL requests.
 
 ---
 
